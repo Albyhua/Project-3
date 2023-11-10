@@ -16,6 +16,9 @@ const resolvers = {
       throw AuthenticationError;
     },
 
+    // getAllEventData: async (parent, { eventInput}) =>
+    //   Event.
+
     getEventData: async (parent, { eventInput }) =>
       Event.findOne({ _id: eventInput._id }),
 
